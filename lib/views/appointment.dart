@@ -30,7 +30,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.black,
           ),
@@ -40,7 +40,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
           style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 20.sp,
-              color: Color(0xff303030)),
+              color: const Color(0xff303030)),
         ),
       ),
       body: Padding(
@@ -65,7 +65,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
               style: TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.sp,
-                  color: Color(color1)),
+                  color: const Color(color1)),
             ),
             SizedBox(
               height: 10.h,
@@ -122,9 +122,9 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                 width: 330.w,
                 height: 50.h,
                 decoration: BoxDecoration(
-                    color: Color(color1),
+                    color: const Color(color1),
                     borderRadius: BorderRadius.circular(7.r)),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Confirm",
                   style: TextStyle(fontWeight: FontWeight.w700),

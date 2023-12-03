@@ -20,7 +20,7 @@ class PathologyTest extends StatelessWidget {
       height: 175.h,
       decoration: BoxDecoration(
           //color: Colors.
-          border: Border.all(color: Color(0xffDBDDE0)),
+          border: Border.all(color: const Color(0xffDBDDE0)),
           borderRadius: BorderRadius.circular(8.r)),
       child: Column(
         children: [
@@ -28,7 +28,7 @@ class PathologyTest extends StatelessWidget {
             width: 334.w,
             height: 39.h,
             decoration: BoxDecoration(
-                color: Color.fromRGBO(16, 33, 125, 0.8),
+                color: const Color.fromRGBO(16, 33, 125, 0.8),
                 borderRadius: BorderRadius.circular(8)),
             child: Center(
               child: Text(
@@ -50,11 +50,11 @@ class PathologyTest extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "$name",
+                      name,
                       style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontSize: 15.sp,
-                          color: Color.fromRGBO(15, 23, 42, 1)),
+                          color: const Color.fromRGBO(15, 23, 42, 1)),
                     ),
                     // Text(
                     //   "₹ 1000/-",
@@ -69,13 +69,13 @@ class PathologyTest extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.w700,
                               fontSize: 16.sp,
-                              color: Color(0xff1BA9B5))),
+                              color: const Color(0xff1BA9B5))),
                       TextSpan(
                           text: "\n $oldPrice",
                           style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 11.sp,
-                              color: Color(0xff5B5B5B)))
+                              color: const Color(0xff5B5B5B)))
                     ])),
                   ],
                 ),
@@ -89,7 +89,7 @@ class PathologyTest extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50.r),
                       border: Border.all(
-                          color: Color(
+                          color: const Color(
                             color1,
                           ),
                           width: 2)),
@@ -97,7 +97,7 @@ class PathologyTest extends StatelessWidget {
                       direction: Axis.horizontal,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.delete,
                           color: Color(color1),
                         ),
@@ -106,7 +106,7 @@ class PathologyTest extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 13.sp,
-                              color: Color(color1)),
+                              color: const Color(color1)),
                         )
                       ]),
                 ),
@@ -120,7 +120,7 @@ class PathologyTest extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50.r),
                       border: Border.all(
-                          color: Color(
+                          color: const Color(
                             color1,
                           ),
                           width: 2)),
@@ -128,7 +128,7 @@ class PathologyTest extends StatelessWidget {
                       direction: Axis.horizontal,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.upload,
                           color: Color(color1),
                         ),
@@ -137,7 +137,7 @@ class PathologyTest extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 13.sp,
-                              color: Color(color1)),
+                              color: const Color(color1)),
                         )
                       ]),
                 )

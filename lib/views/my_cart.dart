@@ -21,9 +21,9 @@ class _MyCartState extends State<MyCart> {
     final snackBar = SnackBar(
       content: Text(
         content,
-        style: TextStyle(color: Colors.red),
+        style: const TextStyle(color: Colors.red),
       ),
-      duration: Duration(seconds: 2), // You can adjust the duration
+      duration: const Duration(seconds: 2), // You can adjust the duration
     );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
@@ -46,7 +46,7 @@ class _MyCartState extends State<MyCart> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.black,
           ),
@@ -56,12 +56,12 @@ class _MyCartState extends State<MyCart> {
           style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 20.sp,
-              color: Color(0xff303030)),
+              color: const Color(0xff303030)),
         ),
         actions: [
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.more_vert,
                 color: Color(0xff0D99FF),
               ))
@@ -77,14 +77,14 @@ class _MyCartState extends State<MyCart> {
               style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 20.sp,
-                  color: Color(color1)),
+                  color: const Color(color1)),
             ),
             SizedBox(
               height: 12.h,
             ),
             ListView.builder(
                 shrinkWrap: true,
-                physics: new NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: varp.card?.length,
                 itemBuilder: (BuildContext context, int index) {
                   //  varp.statechanged();
@@ -103,18 +103,18 @@ class _MyCartState extends State<MyCart> {
                 DateTime x;
 
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => AppointmentScreen()));
+                    builder: (context) => const AppointmentScreen()));
               },
               child: Container(
                 width: 330.w,
                 height: 84.h,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6.r),
-                    border: Border.all(color: Color(0xffDBDDE0))),
+                    border: Border.all(color: const Color(0xffDBDDE0))),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.calendar_month,
                       color: Colors.black,
                     ),
@@ -123,7 +123,7 @@ class _MyCartState extends State<MyCart> {
                       width: 255.w,
                       height: 32.h,
                       decoration: BoxDecoration(
-                          border: Border.all(color: Color(0xffDBDDE0)),
+                          border: Border.all(color: const Color(0xffDBDDE0)),
                           borderRadius: BorderRadius.circular(6.r)),
                       child: Center(
                         heightFactor: 1,
@@ -132,7 +132,7 @@ class _MyCartState extends State<MyCart> {
                           TextSpan(
                               text:
                                   "   ${varp.val!.day}/${varp.val!.month}/${varp.val!.year}  ",
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Color(color1),
                                   fontWeight: FontWeight.w500,
                                   fontSize: 12)),
@@ -141,7 +141,7 @@ class _MyCartState extends State<MyCart> {
                               text: varp.time! <= 7
                                   ? "${varp.time}:00 PM"
                                   : "${varp.time}:00 AM",
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Color(color1),
                                   fontWeight: FontWeight.w500,
                                   fontSize: 12))
@@ -161,7 +161,7 @@ class _MyCartState extends State<MyCart> {
               width: 330.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6.r),
-                  border: Border.all(color: Color.fromRGBO(219, 221, 224, 1))),
+                  border: Border.all(color: const Color.fromRGBO(219, 221, 224, 1))),
               child: Column(
                 children: [
                   Row(
@@ -172,14 +172,14 @@ class _MyCartState extends State<MyCart> {
                         style: TextStyle(
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color.fromRGBO(71, 85, 105, 1)),
+                            color: const Color.fromRGBO(71, 85, 105, 1)),
                       ),
                       Text(
                         "₹ ${varp.mrpTotal}",
                         style: TextStyle(
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color.fromRGBO(71, 85, 105, 1)),
+                            color: const Color.fromRGBO(71, 85, 105, 1)),
                       ),
                     ],
                   ),
@@ -194,14 +194,14 @@ class _MyCartState extends State<MyCart> {
                         style: TextStyle(
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color.fromRGBO(71, 85, 105, 1)),
+                            color: const Color.fromRGBO(71, 85, 105, 1)),
                       ),
                       Text(
                         "₹ ${varp.mrpTotal - varp.price}",
                         style: TextStyle(
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color.fromRGBO(71, 85, 105, 1)),
+                            color: const Color.fromRGBO(71, 85, 105, 1)),
                       ),
                     ],
                   ),
@@ -216,14 +216,14 @@ class _MyCartState extends State<MyCart> {
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
-                            color: Color(color1)),
+                            color: const Color(color1)),
                       ),
                       Text(
                         "₹ ${varp.price}/-",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
-                            color: Color(color1)),
+                            color: const Color(color1)),
                       ),
                     ],
                   ),
@@ -245,7 +245,7 @@ class _MyCartState extends State<MyCart> {
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
-                            color: Color(color1)),
+                            color: const Color(color1)),
                       ),
                       SizedBox(
                         width: 100.w,
@@ -263,7 +263,7 @@ class _MyCartState extends State<MyCart> {
               width: 330.w,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6.r),
-                  border: Border.all(color: Color.fromRGBO(234, 236, 240, 1))),
+                  border: Border.all(color: const Color.fromRGBO(234, 236, 240, 1))),
               child: Column(children: [
                 Row(
                   // mainAxisAlignment: MainAxisAlignment.start,
@@ -272,7 +272,7 @@ class _MyCartState extends State<MyCart> {
                     Checkbox(
                         checkColor: Colors.white,
                         focusColor: Colors.white,
-                        activeColor: Color(color1),
+                        activeColor: const Color(color1),
                         // fillColor: Color(color1),
                         value: accept,
                         onChanged: (bool? value) {
@@ -288,12 +288,12 @@ class _MyCartState extends State<MyCart> {
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 10.sp,
-                              color: Color(0xff344054)),
+                              color: const Color(0xff344054)),
                         ),
                         Text(
                           "Reports will be delivered within 3-4 \nworking days. Hard copy charges are non- \nrefundable once the reports have been \ndispatched.\n\n₹150 per person",
                           style: TextStyle(
-                              color: Color(0xff667085),
+                              color: const Color(0xff667085),
                               fontWeight: FontWeight.w400,
                               fontSize: 10.sp),
                         )
@@ -310,7 +310,7 @@ class _MyCartState extends State<MyCart> {
               onTap: () {
                 if (accept) {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Success()));
+                      .push(MaterialPageRoute(builder: (context) => const Success()));
                 } else {
                   showSnackbar(context, "Mark the checkBox");
                 }
@@ -319,9 +319,9 @@ class _MyCartState extends State<MyCart> {
                 width: 330.w,
                 height: 50.h,
                 decoration: BoxDecoration(
-                    color: Color(color1),
+                    color: const Color(color1),
                     borderRadius: BorderRadius.circular(7.r)),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Schedule",
                   style: TextStyle(fontWeight: FontWeight.w700),

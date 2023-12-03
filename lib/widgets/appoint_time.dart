@@ -38,11 +38,11 @@ class _AppointTimeState extends State<AppointTime> {
         height: 36.h,
         width: 90.w,
         decoration: BoxDecoration(
-            color: selected ? Color(color1) : Colors.white,
+            color: selected ? const Color(color1) : Colors.white,
             borderRadius: BorderRadius.circular(5.r),
             border: Border.all(
                 width: 2,
-                color: Color(
+                color: const Color(
                   color1,
                 ))),
         child: Center(
@@ -51,7 +51,7 @@ class _AppointTimeState extends State<AppointTime> {
             style: TextStyle(
                 fontWeight: FontWeight.w400,
                 fontSize: 14.sp,
-                color: !selected ? Color(0xff303030) : Colors.white),
+                color: !selected ? const Color(0xff303030) : Colors.white),
           ),
         ),
       ),

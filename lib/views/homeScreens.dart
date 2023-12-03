@@ -37,28 +37,28 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 20.sp,
-                color: Color(0xff303030)),
+                color: const Color(0xff303030)),
           ),
           actions: [
             // varp.card.length!=0?
             Text(
               '${varp.card?.length}',
-              style: TextStyle(color: Color(color1)),
+              style: const TextStyle(color: Color(color1)),
             ),
             //:SizedBox(),
             IconButton(
                 onPressed: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => MyCart()));
+                      .push(MaterialPageRoute(builder: (context) => const MyCart()));
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.shopping_cart,
                   color: Color(0xff10217D),
                 ))
           ],
         ),
         body: SingleChildScrollView(
-          child: Container(
+          child: SizedBox(
             // height: 728.h,
             width: 375.w,
             child: Padding(
@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             //  height: 1.8,
                             fontWeight: FontWeight.w500,
                             fontSize: 20.sp,
-                            color: Color(0xff10217D)),
+                            color: const Color(0xff10217D)),
                       ),
                       Flex(
                         direction: Axis.horizontal,
@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               )),
                           IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.arrow_forward,
                                 color: Color(color1),
                               ))
@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 20.sp,
-                        color: Color(color1)),
+                        color: const Color(color1)),
                   ),
                   SizedBox(
                     height: 15.h,
@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     // padding: EdgeInsets.only(left: 26.w),
                     margin: EdgeInsets.only(left: 18.w),
                     decoration: BoxDecoration(
-                        border: Border.all(color: Color(0xffDBDDE0)),
+                        border: Border.all(color: const Color(0xffDBDDE0)),
                         borderRadius: BorderRadius.circular(6.r)),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -145,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 width: 60.h,
                                 height: 60.h,
                                 decoration: BoxDecoration(
-                                    color: Color.fromRGBO(4, 128, 237, 0.2),
+                                    color: const Color.fromRGBO(4, 128, 237, 0.2),
                                     borderRadius: BorderRadius.all(
                                         Radius.elliptical(60.r, 60.r))),
                                 child: Image.asset("assets/medicine.png"),
@@ -154,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 height: 18.h,
                                 width: 53.w,
                                 decoration: BoxDecoration(
-                                    color: Color.fromRGBO(22, 194, 213, 1),
+                                    color: const Color.fromRGBO(22, 194, 213, 1),
                                     borderRadius: BorderRadius.circular(3.r)),
                                 child: Row(
                                     mainAxisAlignment:
@@ -185,7 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           SizedBox(
                             height: 9.h,
                           ),
-                          Text(
+                          const Text(
                             "Includes 92 tests \n Blood Glucose Fasting \n Liver Function Test \nView more",
                             style: TextStyle(
                                 color: Color.fromRGBO(108, 135, 174, 1)),
@@ -200,12 +200,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                   style: TextStyle(
                                       fontWeight: FontWeight.w600,
                                       fontSize: 18.sp,
-                                      color: Color(0xff1BA9B5))),
+                                      color: const Color(0xff1BA9B5))),
                               Container(
                                 width: 114.w,
                                 height: 25.h,
                                 decoration: BoxDecoration(
-                                  border: Border.all(color: Color(color1)),
+                                  border: Border.all(color: const Color(color1)),
                                   borderRadius: BorderRadius.circular(3.r),
                                 ),
                                 child: Center(
@@ -214,7 +214,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   style: TextStyle(
                                       fontWeight: FontWeight.w500,
                                       fontSize: 12.sp,
-                                      color: Color(color1)),
+                                      color: const Color(color1)),
                                 )),
                               )
                             ],
@@ -232,7 +232,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Row Rank() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         ItemCard(

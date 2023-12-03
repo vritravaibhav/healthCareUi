@@ -29,7 +29,7 @@ class _ItemCardState extends State<ItemCard> {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5.r),
-        border: Border.all(color: Color(color1), width: 0.5),
+        border: Border.all(color: const Color(color1), width: 0.5),
       ),
       width: 140.w,
       height: 175.h,
@@ -38,7 +38,7 @@ class _ItemCardState extends State<ItemCard> {
           Container(
             height: 32.h,
             width: 140.w,
-            color: Color.fromRGBO(16, 33, 125, 0.8),
+            color: const Color.fromRGBO(16, 33, 125, 0.8),
             child: Center(
               child: Text(
                 widget.name,
@@ -60,14 +60,14 @@ class _ItemCardState extends State<ItemCard> {
                         style: TextStyle(
                             fontWeight: FontWeight.w400,
                             fontSize: 11.sp,
-                            color: Color(0xff475569)),
+                            color: const Color(0xff475569)),
                       ),
                       Container(
                         height: 24.h,
                         width: 27.w,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: Color(0xff16C2D5),
+                          color: const Color(0xff16C2D5),
                         ),
                         child: Image.asset("assets/tick.png"),
                       ),
@@ -78,7 +78,7 @@ class _ItemCardState extends State<ItemCard> {
                 Text(
                   "Get reports in 24 hours",
                   style: TextStyle(
-                      color: Color(0xff475569),
+                      color: const Color(0xff475569),
                       fontSize: 7.sp,
                       fontWeight: FontWeight.w400),
                 ),
@@ -90,7 +90,7 @@ class _ItemCardState extends State<ItemCard> {
                         style: TextStyle(
                             //height: 14.h,
 
-                            color: Color(color1),
+                            color: const Color(color1),
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w700),
                       ),
@@ -99,7 +99,7 @@ class _ItemCardState extends State<ItemCard> {
                           style: TextStyle(
                               //height: 14.h,
 
-                              color: Color(0xff475569),
+                              color: const Color(0xff475569),
                               fontSize: 6.5.sp,
                               fontWeight: FontWeight.w500))
                     ],
@@ -115,7 +115,7 @@ class _ItemCardState extends State<ItemCard> {
                     }
                     x = "Added to cart";
                     added = true;
-                    ItemCard cart = new ItemCard(
+                    ItemCard cart = ItemCard(
                         name: widget.name,
                         oldPrice: widget.oldPrice,
                         newPrice: widget.newPrice);
@@ -129,7 +129,7 @@ class _ItemCardState extends State<ItemCard> {
                     width: 115.w,
                     height: 26.h,
                     decoration: BoxDecoration(
-                        color: added ? Color(0xff16C2D5) : Color(color1),
+                        color: added ? const Color(0xff16C2D5) : const Color(color1),
                         borderRadius: BorderRadius.circular(5.r)),
                     child: Center(
                         child: Text(
@@ -149,7 +149,7 @@ class _ItemCardState extends State<ItemCard> {
                     // color: Color(color1),
                     //border: ,
                     //  border:,
-                    border: Border.all(color: Color(color1), width: 0.5),
+                    border: Border.all(color: const Color(color1), width: 0.5),
                     borderRadius: BorderRadius.circular(
                       5,
                     ),
@@ -158,7 +158,7 @@ class _ItemCardState extends State<ItemCard> {
                       child: Text(
                     "View details",
                     style: TextStyle(
-                        color: Color(color1),
+                        color: const Color(color1),
                         fontWeight: FontWeight.w700,
                         fontSize: 8.sp),
                   )),

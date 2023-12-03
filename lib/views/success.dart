@@ -17,7 +17,7 @@ class Success extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.black,
           ),
@@ -27,22 +27,22 @@ class Success extends StatelessWidget {
           style: TextStyle(
               fontWeight: FontWeight.w500,
               fontSize: 20.sp,
-              color: Color(0xff303030)),
+              color: const Color(0xff303030)),
         ),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 22.h),
         child: Container(
-          padding: EdgeInsets.all(4),
+          padding: const EdgeInsets.all(4),
           width: 330.w,
           height: 400.h,
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(5.r),
-              border: Border.all(color: Color(0xffC6C6C6))),
+              border: Border.all(color: const Color(0xffC6C6C6))),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-            Container(
+            SizedBox(
                 width: 180.w,
                 height: 164.h,
                 child: Image.asset("assets/success.png")),
@@ -53,7 +53,7 @@ class Success extends StatelessWidget {
               child: Text(
                 "    Lab tests have been scheduled \nsuccessfully, You will receive a mail of \n               the same. ",
                 style: TextStyle(
-                    color: Color(0xff0F172A),
+                    color: const Color(0xff0F172A),
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp),
               ),
